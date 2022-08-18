@@ -4,7 +4,7 @@ export const useToggle = () => {
     const [toggleBool, setToggleBool] = useState(false);
 
     const toggle = useCallback(() => {
-        setToggleBool(!toggleBool) //
+        setToggleBool(!toggleBool) 
     }, [toggleBool]);
 
     return [toggleBool, toggle]
